@@ -15,5 +15,5 @@ app.get("/parks/:parkId", (req, res) => {
 });
 
 app.listen(process.env.PORT, () => {
-  console.log("app listening on " + process.end.PORT);
+  console.log("app listening on " + process.env.PORT);
 });
