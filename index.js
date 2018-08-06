@@ -9,7 +9,7 @@ app.get("/parks/:parkId", (req, res) => {
   park.GetWaitTimes().then(function(rides) {
     // print each wait time
     for (var i = 0, ride; (ride = rides[i++]); ) {
-      res.send(ride.name + ": " + ride.waitTime + " minutes wait");
+      console.log(ride.name + ": " + ride.waitTime + " minutes wait");
     }
   }, console.error);
 });
