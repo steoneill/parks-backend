@@ -1,0 +1,14 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/steoneill/parks-backend",
+  "author": "Ste <s.o'neill@brassagency.com>",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "express": "^4.16.3",
+    "moment": "^2.22.2",
+    "themeparks": "^4.7.5"
+  }
+}
