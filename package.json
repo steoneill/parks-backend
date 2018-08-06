@@ -5,6 +5,9 @@
   "repository": "https://github.com/steoneill/parks-backend",
   "author": "Ste <s.o'neill@brassagency.com>",
   "license": "MIT",
+  "scripts": {
+    "start": "node server"
+  },
   "dependencies": {
     "axios": "^0.18.0",
     "express": "^4.16.3",
