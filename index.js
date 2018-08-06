@@ -5,15 +5,15 @@ const express = require("express"),
   moment = require("moment");
 
 app.get("/parks/:parkId", (req, res) => {
-  let park = new themeparks.Parks[parkId]();
+  let park = new themeparks.Parks[req.params.parkId]();
   park.GetWaitTimes().then(function(rides) {
     // print each wait time
     for (var i = 0, ride; (ride = rides[i++]); ) {
-      console.log(ride.name + ": " + ride.waitTime + " minutes wait");
+      res.send(ride.name + ": " + ride.waitTime + " minutes wait");
     }
   }, console.error);
 });
 
-app.listen(process.env.PORT, () => {
+app.listen(3000 || process.env.PORT, () => {
   console.log("app listening on " + process.env.PORT);
 });
