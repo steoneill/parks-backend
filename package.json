@@ -6,7 +6,7 @@
   "author": "Ste <s.o'neill@brassagency.com>",
   "license": "MIT",
   "scripts": {
-    "start": "yarn start"
+    "start": "node index"
   },
   "dependencies": {
     "axios": "^0.18.0",
